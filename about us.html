@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Sportsmans Warehouse</title>
+
+    <!--The Meta tags reference-->
+    <!--MDN Web Docs, 2025-->
+    <!--Meta Descriptions-->
+    <meta name="description" content="Learn about Sportsmans Warehouse and locate regional stores across South Africa 
+    using our interactive Leaflet map. Find store locations in Pietermaritzburg, Durban, Sandton, Pretoria, Cape Town, 
+    and Gqeberha.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Sportsmans Warehouse, Interactive Map, Leaflet, Store Locations, Pietermaritzburg, 
+    Cascades, Durban, Springfield, Gauteng, Western Cape, Eastern Cape, Sporting Equipment">
+
+    <!-- Website Author -->
+    <meta name="author" content="Ruvay Ramdhin">
+
+    <!-- Search Engine Instruction -->
+    <meta name="robots" content="index, follow">
+
+
+    <!--Global CSS link-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--Accordion CSS link-->
+    <link rel="stylesheet" href="CSS/accordion.css">
+
+    <!--Map CSS link-->
+    <link rel="stylesheet" href="CSS/map.css">
+
+    <!-- Leaflet CSS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Sportsmans Logo.png" alt="Sportsmans Warehouse Logo">
+                </a>
+            </div>
+
+            <nav class="Main-Navigation">
+                <a href="index.html">Home</a> 
+                <a href="about us.html">About us</a> 
+                <a href="brands.html">Brands</a> 
+                <a href="extra services.html">Extra Services</a> 
+                <a href="Inquiry.html">Inquiry</a>
+            </nav>
+        </div> <!-- Added missing closing div for top-bar -->
+    </header>
+
+    <section class="search-container">
+        <div>
+            <form action="#" method="get" role="search">
+                <label for="site-search" class="visually-hidden">Search products or services:</label>
+                <input type="search" id="site-search" name="q" placeholder="Search bar...">
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <!--Large Centralized About Us Block-->
+        <div class="about-content">
+            <h1>About us</h1>
+            <p>Established in 1986, Sportsmans Warehouse has grown into Southern Africa's premier destination for
+                sporting equipment, athletic apparel, and technical services. Operating major-format superstores
+                nationwide, our mission is to equip athletes of every level from beginners to seasoned
+                competitors with high-performance gear, trusted advice, and dedicated in-store support.</p>
+
+            <h2>Our Mission & Vision</h2>
+            <p>We are dedicated to fostering active lifestyles across South Africa by offering top global brands,
+                expert equipment preparation, and reliable customer service across all major sports disciplines.</p>
+        </div>
+
+        <!-- ACCORDION WRAPPER -->
+        <div class="accordion-container">
+
+            <!-- Accordion Item 1: Stores by Region -->
+            <div class="accordion-item">
+                <div class="accordion-header">Stores by Region</div>
+                <div class="accordion-content">
+                    <section class="store-finder-layout">
+                        <h2>Stores by Region</h2>
+                        <ul>
+                            <li><a href="#">KwaZulu-Natal (Pietermaritzburg, Durban)</a></li>
+                            <li><a href="#">Gauteng (Sandton, Pretoria)</a></li>
+                            <li><a href="#">Western Cape (Cape Town, Tyger Valley)</a></li>
+                            <li><a href="#">Eastern Cape (Gqeberha)</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2: Regional Map & Locations -->
+            <div class="accordion-item">
+                <div class="accordion-header">Regional Map & Locations</div>
+                <div class="accordion-content">
+                    <article class="main-region-map">
+                        <h2>Different places in the region</h2>
+
+                        <!-- Leaflet map container (Removed the picture) -->
+                        <div id="map"></div>
+                        <div id="location-card"></div>
+
+                        <div class="location-details">
+                            <h3>Featured Regional Stores</h3>
+
+                            <div class="store-info">
+                                <h4>Pietermaritzburg Branch:</h4>
+                                <p>Cascades Lifestyle Centre, McCarthy Drive, Pietermaritzburg, 3201</p>
+                                <p><strong>Phone:</strong> (033) 347 1234</p>
+                            </div>
+
+                            <div class="store-info">
+                                <h4>Durban North Branch:</h4>
+                                <p>Springfield Value Centre, Electronic Drive, Durban, 4001</p>
+                                <p><strong>Phone:</strong> (031) 263 0000</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2026 Sportsmans Warehouse. All Rights Reserved</p>
+    </footer>
+
+    <!--Global Script-->
+    <script src="JavaScript/script.js"></script>
+
+    <!--Accordion Script-->
+    <script src="JavaScript/accordion.js"></script>
+
+    <!--Leaflet JS library-->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!--Leaflet Map Script-->
+    <script src="JavaScript/map.js"></script>
+
+
+</body>
+
+</html>

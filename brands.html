@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands - Sportsmans Warehouse</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--The link for the CSS lightbox-->
+    <link rel="stylesheet" href="CSS/lightbox.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Sportsmans Logo.png" alt="Sportsmans Warehouse Logo">
+                </a>
+            </div>
+
+            <nav class="Main-Navigation">
+                <a href="index.html">Home</a> 
+                <a href="about us.html">About us</a>
+                <a href="brands.html">Brands</a> 
+                <a href="extra services.html">Extra Services</a> 
+                <a href="Inquiry.html">Inquiry</a>
+            </nav>
+
+    </header>
+
+    <section class="search-container">
+        <div>
+            <form action="#" method="get" role="search">
+                <label for="site-search" class="visually-hidden">Search products or services:</label>
+                <input type="search" id="site-search" name="q" placeholder="Search bar...">
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <section class="brands-section">
+            <h1>Brands</h1>
+            <!--The different brands-->
+            <div>
+                <article class="brand-card">
+                    <h2>Asics</h2>
+                    <img src="images/Asics.jpg" alt="Asics Brand Logo" width="150" onclick="openLightbox(this.src)">
+                    <p>Move the Mind, Elevate the Body.</p>
+                </article>
+
+                <article class="brand-card">
+                    <h2>Nike</h2>
+                    <img src="images/Nike.png" alt="Nike Brand Logo" width="150" onclick="openLightbox(this.src)">
+                    <p>Unleash the Greatness Within.</p>
+                </article>
+
+                <article class="brand-card">
+                    <h2>Adidas</h2>
+                    <img src="images/Adidas.png" alt="Adidas Brand Logo" width="150" onclick="openLightbox(this.src)">
+                    <p>Play by Your Own Rules.</p>
+                </article>
+
+                <article class="brand-card">
+                    <h2>Wilson</h2>
+                    <img src="images/Wilson.webp" alt="Wilson Brand Logo" width="150" onclick="openLightbox(this.src)">
+                    <p>Built for the Game. Born for the Win.</p>
+                </article>
+
+                <article class="brand-card">
+                    <h2>Dunlop</h2>
+                    <img src="images/Dunlop.jpg" alt="Dunlop Brand Logo " width="150" onclick="openLightbox(this.src)">
+                    <p>Crafted for Control. Born for the Court.</p>
+                </article>
+
+                <article class="brand-card">
+                    <h2>Tecnifibre </h2>
+                    <img src="images/tecnifibre.jpg" alt="Tecnifibre Brand Logo" width="150"  onclick="openLightbox(this.src)">
+                    <p>Fight Smart. Play Sharp.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--Adding the lightbox container-->
+        <!--(W3Schools, 2025)-->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged Image"
+            onclick="closeLightbox()">
+            <button class="close" type="button" aria-label="close image" onclick="closeLightbox()">&times;</button>
+            <img id="lightboxImage" src="" alt="Enlarge Image" onclick="event.stopPropagation()">
+        </div>
+
+    </main>
+    <footer>
+        <p>Copyright &copy;2026 Sportsmans Warehouse. All Rights Reserved</p>
+    </footer>
+
+    <!--Global Script-->
+    <script src="JavaScript/script.js"></script>
+
+    <!--Lightbox script-->
+    <script src="JavaScript/lightbox.js"></script>
+
+</body>
+
+</html>

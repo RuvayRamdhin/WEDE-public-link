@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportsmans Warehouse</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--The link for the CSS lightbox-->
+    <link rel="stylesheet" href="CSS/lightbox.css">
+
+</head>
+
+<body>
+
+    <!--HEADER & TOP UTILITY BAR-->
+    <header>
+        <div class="top-bar">
+            <!-- Brand Logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Sportsmans Logo.png" alt="Sportsmans Warehouse Logo">
+                </a>
+            </div>
+        </div>
+
+        <!--Global Navigation Bar-->
+        <nav class="Main-Navigation">
+            <a href="index.html">Home</a> 
+            <a href="about us.html">About us</a> 
+            <a href="brands.html">Brands</a> 
+            <a href="extra services.html">Extra Services</a> 
+            <a href="Inquiry.html">Inquiry</a>
+        </nav>
+    </header>
+
+    <!--Global Search Bar-->
+    <section class="search-container">
+        <div>
+            <form action="#" method="get" role="search">
+                <label for="site-search" class="visually-hidden">Search products or services:</label>
+                <input type="search" id="site-search" name="q" placeholder="Search bar...">
+            </form>
+        </div>
+    </section>
+
+    <!--MAIN CONTENT AREA-->
+    <main>
+        <section class="featured-carousel" aria-label="Featured Promotions">
+            <h1 class="visually-hidden">Featured Highlights</h1>
+            <div class="featured-grid">
+
+                <article class="featured-card">
+                    <h2>Running Footwear</h2>
+                    <img src="images/Shoe.webp" alt="Running Shoes Category Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+
+                <article class="featured-card">
+                    <h2>Racket Sports</h2>
+                    <img src="images/Squash.webp" alt="Racquet Sports Gear Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+
+                <article class="featured-card">
+                    <h2>Outdoor & Hiking</h2>
+                    <img src="images/bag.webp" alt="Outdoor Gear and Apparel Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+
+                <article class="featured-card">
+                    <h2>Team Sports</h2>
+                    <img src="images/team sports.webp" alt="Team Sports Equipment Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+
+                <article class="featured-card">
+                    <h2>Fitness & Gym</h2>
+                    <img src="images/training equipment.webp" alt="Fitness Equipment Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+
+                <article class="featured-card">
+                    <h2>Tech</h2>
+                    <img src="images/watch.jpg" alt="Tech Gear Banner" width="150" onclick="openLightbox(this.src)">
+                </article>
+            </div>
+        </section>
+
+        <!--Adding the lightbox container-->
+        <!--(W3Schools, 2025)-->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged Image"
+            onclick="closeLightbox()">
+            <button class="close" type="button" aria-label="close image" onclick="closeLightbox()">&times;</button>
+            <img id="lightboxImage" src="" alt="Enlarge Image" onclick="event.stopPropagation()">
+        </div>
+
+    </main>
+
+    <!--FOOTER SECTION-->
+
+    <footer>
+        <p>Copyright &copy;2026 Sportsmans Warehouse. All Rights Reserved</p>
+    </footer>
+
+    <!--Global Script-->
+    <script src="JavaScript/script.js"></script>
+
+    <!--Lightbox script-->
+    <script src="JavaScript/lightbox.js"></script>
+
+</body>
+
+</html>

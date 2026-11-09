@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Store & contact - Sportsmans Warehouse</title>
+
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/Sportsmans Logo.png" alt="Sportsmans Warehouse Logo">
+                </a>
+            </div>
+        </div>
+
+        <nav class="Main-Navigation">
+            <a href="index.html">Home</a> 
+            <a href="about us.html">About us</a> 
+            <a href="brands.html">Brands</a> 
+            <a href="extra services.html">Extra Services</a> 
+            <a href="Inquiry.html">Inquiry</a>
+        </nav>
+    </header>
+
+    <section class="search-container">
+        <div>
+            <form action="#" method="get" role="search">
+                <label for="site-search" class="visually-hidden">Search products or services:</label>
+                <input type="search" id="site-search" name="q" placeholder="Search bar...">
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <!-- Direct Contact Form -->
+        <section class="contact-page-container">
+
+            <!--Direct contact form-->
+            <div id="contact">
+                <h3>Send a Inquiry to Store Support</h3>
+                <form id="inquiryForm" class="contact-form">
+                    <!--Name-->
+                    <label for="user-name">Full Name:</label>
+                    <br>
+
+                    <input type="text" id="user-name" name="user_name" placeholder="Enter your name">
+                    <span id="nameError" class="error"></span>
+                    <br>
+
+                    <!--Email-->
+                    <label for="user-email">Email Address:</label>
+                    <br>
+
+                    <input type="email" id="user-email" name="user_email" placeholder="Enter your email">
+                    <span id="emailError" class="error"></span>
+                    <br>
+
+                    <!--Phone number Added here-->
+                    <label for="phone">Phone Number:</label>
+                    <br>
+
+                    <input type="tel" id="phone" name="user-phone" placeholder="Enter your phone number">
+                    <span id="phoneError" class="error"></span>
+                    <br>
+
+                    <!--Inquiry Type Selection-->
+                    <!--W3Schools, 2025-->
+                    <label for="inquiryType">Inquiry Type:</label>
+                    <br>
+                    <select id="inquiryType" name="inquiry-type">
+                        <option value="">Select an option</option>
+                        <option value="Online Order">Online Order</option>
+                        <option value="Store Stock">In-Store Stock</option>
+                        <option value="General Support">General Support</option>
+                    </select>
+                    <span id="typeError" class="error"></span>
+                    <br>
+
+                    <!--Subject-->
+                    <label for="subject">Subject:</label>
+                    <br>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                    <span id="subjectError" class="error"></span>
+                    <br>
+
+                    <!--Message-->
+                    <label for="user-msg">Message:</label>
+
+                    <br>
+                    <textarea id="user-message" name="user-message" rows="5"
+                        placeholder="Enter your message"></textarea>
+                    <span id="messageError" class="error"></span>
+                    <br>
+
+                    <!--Terms Checkbox-->
+                    <!--MDN Web Docs, 2025-->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="agreeTerms" name="agree_terms">
+                        <label for="agreeTerms">I agree to be contacted regarding this inquiry</label>
+                    </div>
+                    <span id="termsError" class="error"></span>
+                    <br>
+
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2026 Sportsmans Warehouse. All Rights Reserved</p>
+    </footer>
+
+    <!--Global JavaScript-->
+    <script src="JavaScript/script.js"></script>
+
+    <!--The JavaScript for the form validation-->
+    <script src="JavaScript/form.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+/*Global reset and base styling*/
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styling the whole body of the website*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    /*Changing the colours to make it look better*/
+    color: #1a1a1a;
+    background-color: #F8F9FA;
+    margin: 0;
+}
+
+/*Controling the main content width*/
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: left;
+}
+
+
+
+/*Global typography and links*/
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+
+    /*Changed the h1 colour to deep navy blue*/
+    color: #0B1B3D;
+
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+
+    /*Chaning the h2 to dark charcoal*/
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    /*Chaning the h3 to dark charcoal*/
+    color: #1a1a1a;
+}
+
+h4 {
+    /*Changed the colour to deep navy blue*/
+    color: #0B1B3D;
+
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+
+    /*Changed the colour drak charcoal*/
+    color: #1a1a1a;
+}
+
+a {
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Chaning the color to Deep Navy Blue */
+    color: #0B1B3D;
+}
+
+ul{
+    margin: 15px;
+}
+
+
+/*The global buttons styling*/
+
+/*The genreal styling for all the buttons*/
+button {
+    width: fit-content;
+    height: auto;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    /*Chaning the colour to Red*/
+    background-color: #E52420;
+    /*Changed the color button for contrast*/
+    color: white;
+
+    transition: background-color 1s;
+    /*Chaning the border colour to deep navy blue*/
+    border: 2px solid #0B1B3D;
+    border-radius: 0.5rem;
+}
+
+.next-page button:hover{
+    /*Changed the hover background colour to red*/
+    background-color: #ffd200;
+    color: #ffffff;
+}
+
+
+/*Header, logo and the main navigation styling*/
+
+/*Styling the header and footer*/
+header {
+    /*Changing the colour*/
+    background-color: #0B1B3D;
+    padding: 10px;
+}
+
+/*Styling everything in a specific things*/
+.logo img {
+    width: 250px;
+    height: auto;
+    max-width: 200px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.Main-Navigation {
+    /*Chaning the background color to deep navy blue*/
+    background-color: #0B1B3D;
+    padding: 1rem;
+
+    /*Align the line links and sign in button neatly in the center*/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.Main-Navigation a{
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    /*Changed the nav links text color white for contrast on the Navy header */
+    color: white;
+}
+
+.Main-Navigation a:hover {
+    /*Changed the link hover to red*/
+    background-color: #E52420;
+    color: white;
+    border-radius: 0.4rem;
+}
+
+.user-account {
+    /*Changing the user account background to deep navy blue*/
+    background-color: #0B1B3D;
+}
+
+.user-account button:hover {
+    /*Changed the color to yellow ticket*/
+    background-color: #ffd200;
+    color: #1a1a1a;
+}
+
+/*This is the search bar styling section*/
+
+.search-container {
+    /*Changing the colour bkacground deep navy navy blue*/
+    background-color: #0B1B3D;
+
+    padding: 0.5rem;
+    text-align: center;
+    font-size: large;
+
+    /*Makes sure the text colour inside is default to white*/
+    color: white;
+}
+
+.search-container input {
+    font-size: 1.2rem;
+
+    /*Changed the colour background to light border grey*/
+    outline: 0.2rem solid #E5E7EB;
+
+    /*Ensure the colour in the typing text is dark charcoal and is contrasted against the white input box*/
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+
+
+/*The cards and media content*/
+/*This is from the index, brands and services pages*/
+
+.featured-card img,
+.brand-card img {
+    width: 200px;
+    height: auto;
+
+    /*Changed the colour to a light border grey*/
+    border: 5px solid #E5E7EB;
+    margin: 5px;
+    box-sizing: content-box;
+}
+
+.brand-card h2,
+.featured-card h2 {
+    /*Chnaged the colour to a deep navy blue*/
+    color: #0B1B3D;
+}
+
+.service-card img,
+.map-container img {
+    width: 400px;
+    height: 250px;
+
+    /*Changed the border colour to light border grey*/
+    border: 5px solid #E5E7EB;
+    margin: 5px;
+    box-sizing: content-box;
+}
+
+
+
+
+/*Aligning the index page featured content to the left*/
+.featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.featured-card {
+    text-align: center;
+}
+
+.featured-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    max-width: 280px;
+    margin: 5px 0;
+}
+
+
+
+/*Styling for the brands section*/
+.brands-section div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.brand-card{
+    width: 280px; /*This is will give the brand cards a consistent width */
+    text-align: center;
+}
+
+.brand-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 5px 0;
+    border: 5px solid #E5E7EB;
+    box-sizing: content-box;
+}
+
+/*Footer section styling*/
+footer {
+     /*Changing the colour*/
+    background-color: #0B1B3D;
+    padding: 10px;
+}
+
+footer p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+
+    /*Changed the color to a soft off white*/
+    color: #F8F9FA;
+}
+
+
+/*The media responsiveness styling*/
+
+/*Styling for the tablet reponsiveness*/
+@media screen and (max-width: 760px) {
+
+    /*Stacking ther header iteam neatly*/
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .search-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Main-Navigation {
+        padding: 10px 5px;
+    }
+
+    .Main-Navigation ul {
+        gap: 0.5rem;
+    }
+
+    /*This is going to expand the main content width*/
+    main {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    /*This is going to stack layout vertically on tablets*/
+    .service-card img,
+    .map-container img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*Going to allow contact textarea to fit the small screen widths*/
+    .contact-form textarea{
+        width: 100%;
+    }
+}
+
+/*Styling for the Mobile responsiveness*/
+@media screen and (max-width: 480px) {
+    /*Scalling the logo*/
+    .logo{
+        text-align: center;
+        width: 100%;
+    }
+    .logo img{
+        display: block;
+        margin: 0 auto;
+        max-width: 180px;
+    }
+    /*Stacking the navigation links and button vertically for easy tapping*/
+    .Main-Navigation{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    /*The different cards for the brands and categories*/
+    .featured-card img,
+    .brand-card img{
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }
+
+    /*Scalling the typography for the mobile screen*/
+    h1{
+        font-size: 2rem
+    }
+    h2, h3{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    /*Styling the full width form field for the touch screen*/
+    .contact-page-container {
+        width: 95%;
+    }
+
+    #contact {
+        padding: 1.2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
